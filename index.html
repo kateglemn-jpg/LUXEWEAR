@@ -1,0 +1,671 @@
+<div class="store">
+
+  <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LUXEWEAR | Premium Fashion</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">
+      LUXE<span>WEAR</span>
+    </div>
+
+    <nav class="navigation">
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#men">Men</a>
+      <a href="#women">Women</a>
+      <a href="#new">New Arrivals</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-button" id="searchButton">🔍</button>
+      <button class="icon-button">♡</button>
+      <button class="cart-button">
+        🛒 Cart
+        <span id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+
+  <!-- SEARCH BAR -->
+  <div class="search-area" id="searchArea">
+    <input 
+      type="text" 
+      id="searchInput"
+      placeholder="Search clothing..."
+    >
+  </div>
+
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+
+    <div class="hero-content">
+      <p class="small-title">NEW COLLECTION 2026</p>
+
+      <h1>
+        Style That
+        <br>
+        Speaks For You.
+      </h1>
+
+      <p class="hero-text">
+        Discover modern clothing designed for people
+        who want to look confident, comfortable and unique.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#shop" class="primary-button">
+          Shop Collection
+        </a>
+
+        <a href="#new" class="secondary-button">
+          Explore New Arrivals
+        </a>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- CATEGORY SECTION -->
+  <section class="categories">
+
+    <div class="section-heading">
+      <p class="small-title">SHOP BY CATEGORY</p>
+      <h2>Find Your Style</h2>
+    </div>
+
+    <div class="category-grid">
+
+      <div class="category-card">
+        <div class="category-image men-image"></div>
+        <h3>Men</h3>
+        <p>Explore Men's Collection</p>
+      </div>
+
+      <div class="category-card">
+        <div class="category-image women-image"></div>
+        <h3>Women</h3>
+        <p>Explore Women's Collection</p>
+      </div>
+
+      <div class="category-card">
+        <div class="category-image shoes-image"></div>
+        <h3>Shoes</h3>
+        <p>Step Into Something New</p>
+      </div>
+
+      <div class="category-card">
+        <div class="category-image accessories-image"></div>
+        <h3>Accessories</h3>
+        <p>Complete Your Look</p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PRODUCTS SECTION -->
+  <section class="products-section" id="shop">
+
+    <div class="section-heading product-heading">
+      <div>
+        <p class="small-title">OUR COLLECTION</p>
+        <h2>Popular Products</h2>
+      </div>
+
+      <div class="filter-buttons">
+        <button class="filter active" data-category="all">
+          All
+        </button>
+
+        <button class="filter" data-category="men">
+          Men
+        </button>
+
+        <button class="filter" data-category="women">
+          Women
+        </button>
+
+        <button class="filter" data-category="shoes">
+          Shoes
+        </button>
+
+      </div>
+    </div>
+
+
+    <div class="product-grid" id="productGrid">
+
+
+      <!-- PRODUCT 1 -->
+      <article 
+        class="product-card"
+        data-category="men"
+        data-name="Classic Black Jacket"
+      >
+
+        <div class="product-image">
+          <img
+            src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=700&q=80"
+            alt="Black jacket"
+          >
+
+          <span class="sale-badge">
+            SALE
+          </span>
+
+          <button class="favorite">
+            ♡
+          </button>
+        </div>
+
+        <div class="product-info">
+          <p class="product-category">
+            MEN'S CLOTHING
+          </p>
+
+          <h3>Classic Black Jacket</h3>
+
+          <div class="rating">
+            ★★★★★
+            <span>(42)</span>
+          </div>
+
+          <div class="price">
+            <span>$89.99</span>
+            <del>$119.99</del>
+          </div>
+
+          <button 
+            class="add-cart"
+            data-product="Classic Black Jacket"
+          >
+            Add To Cart
+          </button>
+        </div>
+
+      </article>
+
+
+      <!-- PRODUCT 2 -->
+      <article 
+        class="product-card"
+        data-category="women"
+        data-name="Elegant White Dress"
+      >
+
+        <div class="product-image">
+          <img
+            src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=700&q=80"
+            alt="White dress"
+          >
+
+          <span class="new-badge">
+            NEW
+          </span>
+
+          <button class="favorite">
+            ♡
+          </button>
+        </div>
+
+        <div class="product-info">
+          <p class="product-category">
+            WOMEN'S CLOTHING
+          </p>
+
+          <h3>Elegant White Dress</h3>
+
+          <div class="rating">
+            ★★★★★
+            <span>(68)</span>
+          </div>
+
+          <div class="price">
+            <span>$74.99</span>
+          </div>
+
+          <button 
+            class="add-cart"
+            data-product="Elegant White Dress"
+          >
+            Add To Cart
+          </button>
+        </div>
+
+      </article>
+
+
+      <!-- PRODUCT 3 -->
+      <article 
+        class="product-card"
+        data-category="shoes"
+        data-name="Urban Sneakers"
+      >
+
+        <div class="product-image">
+          <img
+            src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=80"
+            alt="Red sneakers"
+          >
+
+          <span class="new-badge">
+            NEW
+          </span>
+
+          <button class="favorite">
+            ♡
+          </button>
+        </div>
+
+        <div class="product-info">
+          <p class="product-category">
+            FOOTWEAR
+          </p>
+
+          <h3>Urban Sneakers</h3>
+
+          <div class="rating">
+            ★★★★☆
+            <span>(31)</span>
+          </div>
+
+          <div class="price">
+            <span>$64.99</span>
+          </div>
+
+          <button 
+            class="add-cart"
+            data-product="Urban Sneakers"
+          >
+            Add To Cart
+          </button>
+        </div>
+
+      </article>
+
+
+      <!-- PRODUCT 4 -->
+      <article 
+        class="product-card"
+        data-category="men"
+        data-name="Premium White Shirt"
+      >
+
+        <div class="product-image">
+          <img
+            src="https://images.unsplash.com/photo-1603252110481-7ba873bf42ab?auto=format&fit=crop&w=700&q=80"
+            alt="White shirt"
+          >
+
+          <button class="favorite">
+            ♡
+          </button>
+        </div>
+
+        <div class="product-info">
+          <p class="product-category">
+            MEN'S CLOTHING
+          </p>
+
+          <h3>Premium White Shirt</h3>
+
+          <div class="rating">
+            ★★★★★
+            <span>(87)</span>
+          </div>
+
+          <div class="price">
+            <span>$49.99</span>
+          </div>
+
+          <button 
+            class="add-cart"
+            data-product="Premium White Shirt"
+          >
+            Add To Cart
+          </button>
+        </div>
+
+      </article>
+
+
+      <!-- PRODUCT 5 -->
+      <article 
+        class="product-card"
+        data-category="women"
+        data-name="Modern Beige Coat"
+      >
+
+        <div class="product-image">
+          <img
+            src="https://images.unsplash.com/photo-1539533113208-f6df8cc8b543?auto=format&fit=crop&w=700&q=80"
+            alt="Beige coat"
+          >
+
+          <span class="sale-badge">
+            -20%
+          </span>
+
+          <button class="favorite">
+            ♡
+          </button>
+        </div>
+
+        <div class="product-info">
+          <p class="product-category">
+            WOMEN'S CLOTHING
+          </p>
+
+          <h3>Modern Beige Coat</h3>
+
+          <div class="rating">
+            ★★★★★
+            <span>(53)</span>
+          </div>
+
+          <div class="price">
+            <span>$99.99</span>
+            <del>$124.99</del>
+          </div>
+
+          <button 
+            class="add-cart"
+            data-product="Modern Beige Coat"
+          >
+            Add To Cart
+          </button>
+        </div>
+
+      </article>
+
+
+      <!-- PRODUCT 6 -->
+      <article 
+        class="product-card"
+        data-category="men"
+        data-name="Relaxed Hoodie"
+      >
+
+        <div class="product-image">
+          <img
+            src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=700&q=80"
+            alt="Hoodie"
+          >
+
+          <button class="favorite">
+            ♡
+          </button>
+        </div>
+
+        <div class="product-info">
+          <p class="product-category">
+            MEN'S CLOTHING
+          </p>
+
+          <h3>Relaxed Hoodie</h3>
+
+          <div class="rating">
+            ★★★★★
+            <span>(76)</span>
+          </div>
+
+          <div class="price">
+            <span>$59.99</span>
+          </div>
+
+          <button 
+            class="add-cart"
+            data-product="Relaxed Hoodie"
+          >
+            Add To Cart
+          </button>
+        </div>
+
+      </article>
+
+
+      <!-- PRODUCT 7 -->
+      <article 
+        class="product-card"
+        data-category="women"
+        data-name="Minimalist Top"
+      >
+
+        <div class="product-image">
+          <img
+            src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=700&q=80"
+            alt="Fashion top"
+          >
+
+          <span class="new-badge">
+            NEW
+          </span>
+
+          <button class="favorite">
+            ♡
+          </button>
+        </div>
+
+        <div class="product-info">
+          <p class="product-category">
+            WOMEN'S CLOTHING
+          </p>
+
+          <h3>Minimalist Top</h3>
+
+          <div class="rating">
+            ★★★★☆
+            <span>(29)</span>
+          </div>
+
+          <div class="price">
+            <span>$39.99</span>
+          </div>
+
+          <button 
+            class="add-cart"
+            data-product="Minimalist Top"
+          >
+            Add To Cart
+          </button>
+        </div>
+
+      </article>
+
+
+      <!-- PRODUCT 8 -->
+      <article 
+        class="product-card"
+        data-category="shoes"
+        data-name="Classic White Sneakers"
+      >
+
+        <div class="product-image">
+          <img
+            src="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=700&q=80"
+            alt="White sneakers"
+          >
+
+          <button class="favorite">
+            ♡
+          </button>
+        </div>
+
+        <div class="product-info">
+          <p class="product-category">
+            FOOTWEAR
+          </p>
+
+          <h3>Classic White Sneakers</h3>
+
+          <div class="rating">
+            ★★★★★
+            <span>(94)</span>
+          </div>
+
+          <div class="price">
+            <span>$79.99</span>
+          </div>
+
+          <button 
+            class="add-cart"
+            data-product="Classic White Sneakers"
+          >
+            Add To Cart
+          </button>
+        </div>
+
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <!-- PROMOTIONAL SECTION -->
+  <section class="promo">
+
+    <div class="promo-content">
+
+      <p class="small-title">
+        LIMITED OFFER
+      </p>
+
+      <h2>
+        Get 20% Off
+        <br>
+        Your First Order
+      </h2>
+
+      <p>
+        Join our community and receive exclusive
+        offers and early access to new collections.
+      </p>
+
+      <button class="primary-button">
+        Shop Now
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter" id="contact">
+
+    <div>
+      <p class="small-title">
+        STAY IN THE LOOP
+      </p>
+
+      <h2>
+        Join Our Newsletter
+      </h2>
+
+      <p>
+        Get fashion inspiration, new arrivals and
+        special offers directly in your inbox.
+      </p>
+    </div>
+
+    <form class="newsletter-form">
+
+      <input
+        type="email"
+        placeholder="Enter your email address"
+        required
+      >
+
+      <button type="submit">
+        Subscribe
+      </button>
+
+    </form>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="footer-column">
+
+      <div class="logo">
+        LUXE<span>WEAR</span>
+      </div>
+
+      <p>
+        Modern fashion for modern people.
+        Designed for confidence, comfort and style.
+      </p>
+
+    </div>
+
+
+    <div class="footer-column">
+
+      <h3>Shop</h3>
+
+      <a href="#">Men</a>
+      <a href="#">Women</a>
+      <a href="#">Shoes</a>
+      <a href="#">Accessories</a>
+
+    </div>
+
+
+    <div class="footer-column">
+
+      <h3>Help</h3>
+
+      <a href="#">Contact Us</a>
+      <a href="#">Shipping</a>
+      <a href="#">Returns</a>
+      <a href="#">FAQ</a>
+
+    </div>
+
+
+    <div class="footer-column">
+
+      <h3>Follow Us</h3>
+
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+      <a href="#">TikTok</a>
+      <a href="#">YouTube</a>
+
+    </div>
+
+  </footer>
+
+
+ <div class="copyright">
+    © 2026 LUXEWEAR. All rights reserved.
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
